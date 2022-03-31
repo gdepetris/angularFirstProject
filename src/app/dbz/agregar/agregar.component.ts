@@ -10,6 +10,7 @@ import { Personaje } from "../interfaces/Personaje.interface";
 export class agregaComponent {
 
 
+  
     @Output() onNuevoPersonaje: EventEmitter<Personaje> = new EventEmitter();
 
     @Input() nuevo: Personaje = {
