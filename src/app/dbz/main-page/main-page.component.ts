@@ -1,6 +1,7 @@
 import { compileDeclareNgModuleFromMetadata } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { Personaje } from '../interfaces/Personaje.interface';
+import { DbzService } from '../services/dbz.service';
 
 
 @Component({
@@ -41,6 +42,11 @@ export class MainPageComponent {
   agregarNuevoPersonaje( algo: Personaje ){
 
     this.personajes.push(algo);
+
+  }
+
+  constructor(private DbzService: DbzService){
+
 
   }
 
